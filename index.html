@@ -29,7 +29,7 @@
     font-family:'Inter',sans-serif;
     line-height:1.6;
   }
-  h1,h2,h3,.brand{font-family:'Space Grotesk',sans-serif;}
+  h1,h2,h3,.brand,.headline{font-family:'Space Grotesk',sans-serif;}
   a{color:var(--cyan);text-decoration:none;}
   a:hover{text-decoration:underline;}
   .wrap{max-width:1000px;margin:0 auto;padding:0 24px;}
@@ -93,23 +93,24 @@
     font-size:24px;
     font-weight:500;
     color:var(--text-mute);
-    margin-bottom:6px;
+    margin-bottom:14px;
     position:relative;
   }
-  h1 .headline{
+  .tagline{
+    max-width:560px;
+    margin:0 auto 20px;
+    color:var(--text-mute);
+    font-size:16px;
+    position:relative;
+  }
+  .headline{
     display:block;
     font-size:60px;
     font-weight:700;
     color:var(--cyan);
     letter-spacing:.01em;
-    margin-top:6px;
+    margin:8px 0 36px;
     text-transform:uppercase;
-  }
-  .tagline{
-    max-width:560px;
-    margin:26px auto 36px;
-    color:var(--text-mute);
-    font-size:16px;
     position:relative;
   }
   .links{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;position:relative;}
@@ -185,13 +186,13 @@
   <div class="orb ring"></div>
   <div class="wrap">
     <div class="eyebrow">Data Science &amp; AI Portfolio</div>
-    <h1>Hi, I'm Arnoldo
-      <span class="headline">Turning data into intelligent decisions</span>
-    </h1>
+    <h1>Hi, I'm Arnoldo</h1>
     <p class="tagline">
-      I use data and artificial intelligence to solve real problems: cleaning messy
-      datasets, building models, and turning numbers into decisions anyone can understand.
+      Naturally curious, trained in economics, and completely hooked on data science and AI.
+      I turn messy spreadsheets into dashboards, models, and answers that make sense —
+      and I'm always up for a good data puzzle.
     </p>
+    <div class="headline">Turning data into intelligent decisions</div>
     <div class="links">
       <a class="btn primary" href="#projects">View projects</a>
       <a class="btn" href="https://github.com/Arnoldzzz21">View GitHub</a>
