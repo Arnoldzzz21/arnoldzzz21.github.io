@@ -61,11 +61,13 @@
     position:absolute;
     border-radius:50%;
   }
-  .orb.moon{
-    width:180px;height:180px;
-    top:60px;right:8%;
-    background:radial-gradient(circle at 35% 30%, #2a3a56, #101a2e);
-    box-shadow:0 0 60px rgba(62,203,240,.15);
+  .orb.saturn{
+    width:280px;
+    top:15px;right:4%;
+    border-radius:0;
+    -webkit-mask-image:radial-gradient(ellipse 60% 55% at center, black 55%, transparent 85%);
+    mask-image:radial-gradient(ellipse 60% 55% at center, black 55%, transparent 85%);
+    filter:drop-shadow(0 0 45px rgba(120,90,220,.35));
   }
   .orb.ring{
     width:130px;height:130px;
@@ -182,7 +184,7 @@
 </nav>
 
 <header class="hero">
-  <div class="orb moon"></div>
+  <img src="saturn.png" class="orb saturn" alt="">
   <div class="orb ring"></div>
   <div class="wrap">
     <div class="eyebrow">Data Science &amp; AI Portfolio</div>
